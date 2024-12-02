@@ -1,92 +1,66 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: cursive;
-}
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: cursive;
-    background-image: url('cloudshadow.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #e3f2fd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("bakground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
 }
-.container {
-    background-color: #e0dddd;
-    max-width: 600px;
-    text-align: center;
-    padding: 20px;
-    background-image: url('cloud.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    margin: 20px auto;
-    margin-top: 40px;
-    border-radius: 5px;
-}
+
 form {
-    display: flex;
-    justify-content: space-between;
-    margin: 30px;
-    align-items: center;
+  margin-bottom: 20px;
 }
-form input[type="text"] {
-    padding: 10px;
-    font-size: 18px;
-    width: 70%;
-    border: none;
-    outline: none;
-    border-radius: 5px;
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
-form input[type="submit"] {
-    padding: 10px 20px;
-    border: none;
-    background-color: #c0645a;
-    color: white;
-    font-size: 18px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.2s ease-in;
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2196f3;
+  color: #fff;
+  cursor: pointer;
 }
-form input[type="submit"]:hover {
-    background-color: rgb(171, 75, 75);
+
+.weather-data {
+  text-align: center;
+  color: white;
 }
-.icon img {
-    width: 100px;
-    height: 100px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
+
 .temp {
-    font-size: 40px;
-    font-weight: 1000;
-    margin-top: 10px;
+  font-size: 72px;
+  font-weight: 900;
+  margin: 15px 0;
 }
+
 .desc {
-    font-size: 30px;
-    font-weight: 700;
-    margin-top: 10px;
-    margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 900;
+  margin: 15px 0;
 }
-.details {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+
+.details div {
+  font-size: 22px;
+  font-weight: 900;
+  margin: 8px 0;
 }
-.details > div {
-    font-size: 18px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    margin: 10px;
-    min-height: 40px;
-    text-align: center;
-    align-items: center;
-    flex: 1;
+
+.icon img {
+  width: 120px;
+  height: 120px;
 }
+
