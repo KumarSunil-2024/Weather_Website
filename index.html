@@ -1,31 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather website</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1>Weather App</h1>
-      <form action="#">
-        <input id="city-name" type="text" placeholder="Enter your city name" />
-        <input type="submit" value="Get weather" />
-      </form>
-      <div class="weather-data">
-        <div class="icon"></div>
-        <div class="temp"></div>
-        <div class="desc"></div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form>
+    <input type="text" id="city-name" placeholder="Enter City Name" required>
+    <button type="submit">Search</button>
+  </form>
 
-        <div class="details">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </div>
-    </div>
+  <div class="weather-data">
+    <div class="temp"></div>
+    <div class="icon"></div>
+    <div class="desc"></div>
+    <div class="details"></div>
+  </div>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
+
