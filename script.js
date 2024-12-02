@@ -37,12 +37,10 @@ async function getWeatherData(cityValue) {
     weatherDataEle.querySelector(".temp").textContent = `${temprature}°C`;
     weatherDataEle.querySelector(".desc").textContent = `${description}`;
 
-    imgIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${icon}.png" alt="">`;
+    imgIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${icon}.png" alt="Weather Icon">`;
 
     weatherDataEle.querySelector(".details").innerHTML = details
-      .map((detail) => {
-        return `<div>${detail}</div>`;
-      })
+      .map((detail) => `<div>${detail}</div>`)
       .join("");
   } catch (err) {
     weatherDataEle.querySelector(".temp").textContent = "";
@@ -50,3 +48,4 @@ async function getWeatherData(cityValue) {
     weatherDataEle.querySelector(".desc").textContent = "An Error Occurred!";
   }
 }
+
